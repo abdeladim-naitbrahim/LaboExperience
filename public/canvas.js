@@ -14,6 +14,7 @@ function singin()
 	singet=true;
   document.getElementById("name").innerHTML="welcome "+document.getElementById("vname").value;
    document.getElementById("pwin").innerHTML="congratulations " +document.getElementById("vname").value+" you win";
+   //doLoad();
 }
 function hidelement(e)
 {
@@ -22,4 +23,21 @@ function hidelement(e)
 function showlement(e)
 {
 	 e.style.display = "block";
+}
+function gameloaded()
+{
+   menu=document.getElementById("menu");
+ sing=document.getElementById("sing");
+ winpanel=document.getElementById("win");
+ playpanel=document.getElementById("play");
+	video=document.getElementById('video');
+  	 console.log("video loaded");
+	 
+  video.onloadeddata = (event) => {
+    console.log("video ready");
+	hidelement(load);
+	showlement(menu);
+	showlement(video);
+};
+
 }

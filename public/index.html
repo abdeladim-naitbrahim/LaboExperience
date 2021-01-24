@@ -10,11 +10,12 @@
     
   </head>
 
-  <body style="width:100%; height:100%" onload= "">
-    <div style="width:100%; height:100%">
-      <video  id="video" src="/public/ex1.mp4" style= "width:100%; height:100%; object-fit:fill" />
+  <body style="width:100%; height:100%" onload= "gameloaded()">
+    <div style=" width:100%; height:100%">
+      <div  id="load" class="spinner"></div>
+      <video onload="gameloaded()"  id="video" src="/public/ex1.mp4" style="display:none;width:100%; height:100%; object-fit:fill" />
     </div>
-	<div id="menu" style=" position:absolute; top:0; left:0; background:0; width:100%; height:100%">
+	<div id="menu" style="display:none; position:absolute; top:0; left:0; background:0; width:100%; height:100%">
 	
 
   <div class="main" id="sing">
